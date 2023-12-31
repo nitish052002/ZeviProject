@@ -1,0 +1,139 @@
+@import "../variables";
+
+.productcard__container {
+  width: 100px;
+  min-width: 200px;
+  height: 339px;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+  margin-left: 0;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: $shadow;
+
+    .viewButton {
+      height: 40px;
+    }
+  }
+}
+
+.productcard__content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  line-height: 1.5rem;
+
+  .productcard__title {
+    letter-spacing: 1px;
+  }
+
+  .productcard__original {
+    color: #cacaca;
+  }
+  .productcard__discount-price {
+    color: rgb(20, 101, 233);
+    font-weight: 600;
+    padding-left: 5px;
+  }
+}
+
+.productcard__rating {
+  display: flex;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  img {
+    border-radius: 6px;
+    width: 100%;
+    height: 200px;
+  }
+
+  .wishlistButton.hollow {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    button {
+      border: none;
+      outline: none;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:hover {
+      visibility: hidden;
+
+      + .wishlistButton.fill {
+        visibility: visible;
+      }
+    }
+  }
+
+  .wishlistButton.fill {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    visibility: hidden;
+
+    button {
+      border: none;
+      outline: none;
+      color: red;
+      display: flex;
+      background: transparent;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .viewButton {
+    position: absolute;
+    width: 100%;
+    bottom: 3px;
+    background-color: #555df3;
+    opacity: 0.7;
+    height: 0;
+    transition: 0.3s;
+    overflow: hidden;
+
+    button {
+      cursor: pointer;
+      outline: none;
+      background: transparent;
+      border: none;
+      width: 100%;
+      font-size: 1.3rem;
+      color: white;
+      padding: 7px 10px;
+    }
+  }
+
+  .wishlistButton.fill.red {
+    visibility: visible;
+    button {
+      color: red;
+    }
+  }
+
+  .wishlistButton.hollow.hide {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    min-width: 180px;
+    height: 282px;
+  }
+}

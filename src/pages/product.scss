@@ -1,0 +1,31 @@
+.products {
+  width: 100%;
+
+  .search {
+    margin-left: 15rem;
+  }
+
+  .heading {
+    padding-left: 2rem;
+  }
+
+  .box {
+    display: flex;
+    width: 100%;
+  }
+
+  .products-container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .products {
+    .search {
+      margin-left: 0;
+    }
+  }
+}

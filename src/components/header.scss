@@ -1,0 +1,23 @@
+header {
+  width: 100%;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .search-box{
+    width: 80%;
+  }
+
+  .logo{
+   height: 50px;
+   width: 100px;
+  }
+
+  img {
+    width: 100%;
+  }
+}

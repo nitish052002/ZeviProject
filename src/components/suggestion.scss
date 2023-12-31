@@ -1,0 +1,70 @@
+.suggestion-box {
+  width: 85%;
+  min-width: 400px;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 8px;
+  border: 1px solid #cacaca;
+  padding: 1.5rem;
+  position: relative;
+  visibility: hidden;
+  transition: 0.3 ease;
+
+  .heading {
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 1rem 0;
+  }
+
+  ul,
+  li {
+    list-style-type: none;
+    line-height: 1.6rem;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &::after {
+      content: "";
+      display: none;
+      border: 2px solid orange;
+      position: absolute;
+      top: 25px;
+      left: 0;
+
+      transition: 0.3s;
+    }
+
+    &:hover {
+      color: orange;
+      &::after {
+        display: block;
+        width: 8%;
+      }
+    }
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+  }
+}
+
+.suggestion-box.active {
+  visibility: visible;
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 700px) {
+  .suggestion-box {
+    .products {
+      grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+    }
+  }
+}

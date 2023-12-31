@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "imgURL": "https://i.dummyjson.com/data/products/13/thumbnail.webp",
+      "desc": "Fog Scent Xpressio Perfume",
+      "id" : 1111
+    },
+    {
+      "imgURL": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      "desc": "Samsung Universe 9",
+      "id" : 1112
+    },
+    {
+      "imgURL": "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
+      "desc": "MacBook Pro",
+      "id" : 1113
+    },
+    {
+      "imgURL": "https://i.dummyjson.com/data/products/17/thumbnail.jpg",
+      "desc": "Tree Oil 30ml",
+      "id" : 1114
+    },
+    {
+      "imgURL": "https://i.dummyjson.com/data/products/24/thumbnail.jpg",
+      "desc": "cereals muesli fruit nuts",
+      "id" : 1115
+    }
+  ]
+}
