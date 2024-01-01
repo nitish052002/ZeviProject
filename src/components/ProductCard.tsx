@@ -20,6 +20,22 @@ interface ProductItem {
 interface Obj {
   productData: Partial<ProductItem>;
 }
+
+
+
+/*
+* @typedef {Object} productData - Data on product available to buy
+*
+* @property {string} name - The name or title of the product
+* @property {string} price - The price of the product
+* @property {number} discountedPrice - discounted price of the product 
+* @property {number} rating - The aggregate rating of the product (integer out of five)
+* @property {string} image - Contains URL for the product image
+* @property {string} _id - Unique ID for the product
+* 
+
+
+*/
 function ProductCard({ productData }: Obj) {
   const [turnRed, setTurnRed] = useState(false);
   return (

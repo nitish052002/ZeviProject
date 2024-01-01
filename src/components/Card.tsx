@@ -4,6 +4,14 @@ interface card {
   url: string;
   desc: string;
 }
+
+
+/*
+
+@property (string) url - Image url of the card
+@property (string) desc - title of the card
+
+*/
 function Card({ url, desc }: card) {
   return (
     <div className="container">
