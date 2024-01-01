@@ -31,7 +31,7 @@
   }
 
   .filterOption.active {
-    height:fit-content;
+    height: fit-content;
   }
 
   .rating-filter .rating {
@@ -39,6 +39,13 @@
     top: -4px;
     left: 30px;
   }
+}
+
+hr {
+  border: solid 1px #cacaca;
+  opacity: 0.5;
+  width: 80%;
+  margin: 10px 0;
 }
 
 // checkbox styles

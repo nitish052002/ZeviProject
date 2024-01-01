@@ -11,11 +11,13 @@ function FilterBox({ brandList, onClickHandler }: Brand) {
   const [activeOptionItem, setActiveOptionItem] = useState(0);
 
   const expandOptions = (num: number) => {
-    if (num !== 0) {
+    if (activeOptionItem > 0) {
       setActiveOptionItem(0);
+    } else {
+      setActiveOptionItem(num);
     }
 
-    setActiveOptionItem(num);
+    console.log(activeOptionItem);
   };
   return (
     <div className="filterbox">
@@ -54,7 +56,7 @@ function FilterBox({ brandList, onClickHandler }: Brand) {
           ))}
         </div>
       </div>
-
+      <hr />
       <div className="price-filter filter-item">
         <div
           className="title"
@@ -110,7 +112,8 @@ function FilterBox({ brandList, onClickHandler }: Brand) {
         </div>
       </div>
 
-      {/* Filter Section */}
+      <hr />
+      {/* Rating Filter Section */}
       <div className="rating-filter filter-item">
         <div
           className="title"

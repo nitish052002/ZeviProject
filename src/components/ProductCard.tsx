@@ -27,7 +27,7 @@ function ProductCard({ productData }: Obj) {
       <div className="image-container">
         <img src={productData.thumbnail} alt="" />
         <div
-          className={`wishlistButton hollow ${turnRed ? "hide " : ""}`}
+          className={`wishlistButton hollow ${turnRed ? "hide  " : ""}`}
           onClick={() => {
             setTurnRed(!turnRed);
           }}
