@@ -7,6 +7,13 @@ interface Brand {
   onClickHandler: (name: any, value: any) => void;
 }
 
+/**
+
+@property (array) brandlist - list of the all brands to filter
+@property (function) onClickHandler - function to update query object in app component
+
+*/
+
 function FilterBox({ brandList, onClickHandler }: Brand) {
   const [activeOptionItem, setActiveOptionItem] = useState(0);
 

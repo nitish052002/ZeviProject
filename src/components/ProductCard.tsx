@@ -23,7 +23,7 @@ interface Obj {
 
 
 
-/*
+/**
 * @typedef {Object} productData - Data on product available to buy
 *
 * @property {string} name - The name or title of the product
