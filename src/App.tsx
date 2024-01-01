@@ -52,6 +52,13 @@ function App() {
     setProducts(result);
   };
 
+
+  /**
+   * 
+   * @param name (string) - title of the filter  
+   * @param value (number) - value of the filter 
+   */
+
   const onClickHandler = (name: any, value: any) => {
     setQuery({ ...query, [name]: value });
   };
