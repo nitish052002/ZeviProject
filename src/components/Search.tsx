@@ -1,13 +1,15 @@
 import React from "react";
 import "./search.scss";
+import { ChangeEvent  } from "react";
 
 type active = {
   displayFilterBox?: () => void;
+  filterBySearch? : (event: ChangeEvent<HTMLInputElement>)=> void
 };
 
 
 
-function Search({ displayFilterBox }: active) {
+function Search({ displayFilterBox,filterBySearch }: active) {
   return (
     <div className="search">
       <input
@@ -15,6 +17,7 @@ function Search({ displayFilterBox }: active) {
         placeholder="Search"
         type="text"
         name="search"
+        onChange={filterBySearch}
       />
       <label htmlFor="search" className="label"></label>
     </div>
