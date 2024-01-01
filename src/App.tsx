@@ -86,7 +86,7 @@ function App() {
               products={products}
               onClickHandler={onClickHandler}
               brands={brands}
-            />
+            /> 
           }
         />
       </Routes>
