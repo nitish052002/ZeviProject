@@ -30,8 +30,18 @@
     }
   }
 
-  .filterOption.active {
-    height: fit-content;
+  .price-filter .filterOption.active {
+    height: 100px;
+  }
+  
+  
+  .brand-filter .filterOption.active {
+    height: 600px;
+  }
+  
+  
+  .rating-filter .filterOption.active {
+    height: 30px;
   }
 
   .rating-filter .rating {
