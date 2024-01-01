@@ -58,17 +58,11 @@
     position: absolute;
     top: 5px;
     right: 5px;
-
-    button {
-      border: none;
-      outline: none;
-      background: transparent;
-      color: white;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       visibility: hidden;
@@ -84,17 +78,11 @@
     top: 5px;
     right: 5px;
     visibility: hidden;
-
-    button {
-      border: none;
-      outline: none;
-      color: red;
-      display: flex;
-      background: transparent;
-      cursor: pointer;
-      justify-content: center;
-      align-items: center;
-    }
+    color: red;
+    display: flex;    
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
   }
 
   .viewButton {

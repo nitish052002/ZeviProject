@@ -21,20 +21,26 @@ interface Obj {
   productData: Partial<ProductItem>;
 }
 function ProductCard({ productData }: Obj) {
-  const [turnRed , setTurnRed] = useState(false)
+  const [turnRed, setTurnRed] = useState(false);
   return (
     <div className="productcard__container" key={productData.id}>
       <div className="image-container">
         <img src={productData.thumbnail} alt="" />
-        <div className={`wishlistButton hollow ${turnRed ? "hide  " : ""}`} onClick={()=> {setTurnRed(!turnRed);}}>
-          <button>
-            <i className="bx bx-heart bx-md"></i>
-          </button>
+        <div
+          className={`wishlistButton hollow ${turnRed ? "hide " : ""}`}
+          onClick={() => {
+            setTurnRed(!turnRed);
+          }}
+        >
+          <i className="bx bx-heart bx-md"></i>
         </div>
-        <div className={`wishlistButton fill ${turnRed ? "red" : ""}`} onClick={()=> {setTurnRed(!turnRed); }}>
-          <button >
-            <i className="bx bxs-heart bx-md" ></i>
-          </button>
+        <div
+          className={`wishlistButton fill ${turnRed ? "red" : ""}`}
+          onClick={() => {
+            setTurnRed(!turnRed);
+          }}
+        >
+          <i className="bx bxs-heart bx-md"></i>
         </div>
         <div className="viewButton">
           <button>View Product</button>
@@ -43,9 +49,11 @@ function ProductCard({ productData }: Obj) {
 
       <div className="productcard__content">
         <p className="productcard__title">{productData.title}</p>
-        <s className="productcard__original">{productData.discountPercentage}</s>
+        <s className="productcard__original">
+          {productData.discountPercentage}
+        </s>
         <span className="productcard__discount-price">
-          Rs.{productData.price} 
+          Rs.{productData.price}
         </span>
         <div className="productcard__rating">
           <div className="stars">
