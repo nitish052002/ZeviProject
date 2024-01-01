@@ -5,6 +5,8 @@ type active = {
   displayFilterBox?: () => void;
 };
 
+
+
 function Search({ displayFilterBox }: active) {
   return (
     <div className="search">
